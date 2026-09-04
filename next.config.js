@@ -1,16 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   basePath: '/zubora-recipe',
-  async redirects() {
-    return [
-      {
-        source: '/',
-        destination: '/zubora-recipe',
-        basePath: false,
-        permanent: true,
-      },
-    ]
-  },
+  // redirects ルールは不要です（削除してください）
 }
 
 module.exports = nextConfig
