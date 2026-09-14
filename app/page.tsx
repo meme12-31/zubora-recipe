@@ -249,17 +249,24 @@ export default function HomePage() {
               onToggle={toggleSeasoning}
             />
 
-            <button
-              type="button"
-              onClick={runSearch}
-              className="!mt-14 flex min-h-[56px] w-full items-center justify-center gap-2 rounded-full bg-brand-orange text-lg font-bold text-white shadow-lg transition hover:bg-orange-600 active:scale-[0.98]"
-            >
-              <Search className="h-6 w-6" />
-              レシピを探す
-            </button>
+            <div className="!mt-14 flex flex-col">
+              <button
+                type="button"
+                onClick={runSearch}
+                className="mb-14 flex min-h-[56px] w-full items-center justify-center gap-2 rounded-full bg-brand-orange text-lg font-bold text-white shadow-lg transition hover:bg-orange-600 active:scale-[0.98]"
+              >
+                <Search className="h-6 w-6" />
+                レシピを探す
+              </button>
 
-            <div className="mt-10 border-t border-orange-100 pt-10">
-              <UsefulColumnsSection />
+              <hr
+                className="m-0 block w-full shrink-0 border-0 border-t border-amber-200/60"
+                aria-hidden
+              />
+
+              <div className="mt-10">
+                <UsefulColumnsSection />
+              </div>
             </div>
           </div>
         )}

@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from 'next';
 import Script from 'next/script';
+import Footer from '@/components/Footer';
 import './globals.css';
 
 const GA_MEASUREMENT_ID = 'G-KXFP18WL67';
@@ -42,7 +43,8 @@ export default function RootLayout({
 
         {/* モバイルライクな中央寄せコンテナ */}
         <div className="mx-auto flex min-h-screen w-full max-w-md flex-col bg-brand-cream shadow-sm">
-          {children}
+          <div className="flex flex-1 flex-col">{children}</div>
+          <Footer />
         </div>
       </body>
     </html>
