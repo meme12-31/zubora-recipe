@@ -1,7 +1,7 @@
 const footerLinks = [
-  { label: '運営者情報', href: '#' },
-  { label: 'プライバシーポリシー', href: '#' },
-  { label: 'お問い合わせ', href: '#' },
+  { label: '運営者情報', href: 'https://www.hit-tool.com/about' },
+  { label: 'プライバシーポリシー', href: 'https://www.hit-tool.com/privacy' },
+  { label: 'お問い合わせ', href: 'https://www.hit-tool.com/contact' },
 ] as const;
 
 export default function Footer() {
