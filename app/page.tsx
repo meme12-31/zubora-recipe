@@ -8,7 +8,7 @@ import EffortLevelSelector from '@/components/EffortLevelSelector';
 import SeasoningSettings from '@/components/SeasoningSettings';
 import LoadingState from '@/components/LoadingState';
 import RecipeCard from '@/components/RecipeCard';
-import UsefulColumnsSection from '@/components/UsefulColumnsSection';
+import UsefulColumnsBanner from '@/components/UsefulColumnsBanner';
 import Toast, { type ToastData, type ToastType } from '@/components/Toast';
 import type { EffortLevel, Ingredient, Recipe } from '@/types';
 import { SPECIAL_SEASONINGS } from '@/lib/presets';
@@ -265,7 +265,7 @@ export default function HomePage() {
               />
 
               <div className="mt-10">
-                <UsefulColumnsSection />
+                <UsefulColumnsBanner />
               </div>
             </div>
           </div>

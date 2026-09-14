@@ -12,16 +12,16 @@ export default function UsefulColumnsSection() {
       aria-labelledby="useful-columns-heading"
       className="space-y-3"
     >
-      <div className="flex items-center gap-2">
+      <div className="mb-1 flex items-center gap-2">
         <span className="flex h-9 w-9 items-center justify-center rounded-full bg-orange-100 text-brand-orange">
           <BookOpen className="h-5 w-5" aria-hidden />
         </span>
-        <h2
+        <h1
           id="useful-columns-heading"
           className="text-lg font-bold text-brand-gray"
         >
           お役立ちコラム
-        </h2>
+        </h1>
       </div>
       <p className="text-sm leading-relaxed text-gray-500">
         あまり物活用やズボラ飯のコツを、読みやすい記事でまとめています。
