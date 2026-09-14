@@ -8,6 +8,7 @@ import EffortLevelSelector from '@/components/EffortLevelSelector';
 import SeasoningSettings from '@/components/SeasoningSettings';
 import LoadingState from '@/components/LoadingState';
 import RecipeCard from '@/components/RecipeCard';
+import UsefulColumnsSection from '@/components/UsefulColumnsSection';
 import Toast, { type ToastData, type ToastType } from '@/components/Toast';
 import type { EffortLevel, Ingredient, Recipe } from '@/types';
 import { SPECIAL_SEASONINGS } from '@/lib/presets';
@@ -173,7 +174,7 @@ export default function HomePage() {
       <Header showFavorites subtitle="あまり物でズボラ飯" />
       <Toast toast={toast} onDismiss={() => setToast(null)} />
 
-      <main className="flex-1 px-4 pb-32 pt-4">
+      <main className="flex-1 px-4 pb-16 pt-4">
         {view === 'loading' && <LoadingState />}
 
         {view === 'error' && (
@@ -247,25 +248,22 @@ export default function HomePage() {
               selected={specialSeasonings}
               onToggle={toggleSeasoning}
             />
-          </div>
-        )}
-      </main>
 
-      {/* 画面下部固定の検索ボタン（入力画面のみ） */}
-      {view === 'input' && (
-        <div className="sticky bottom-0 z-20 border-t border-orange-100 bg-brand-cream/95 px-4 py-3 backdrop-blur">
-          <div className="mx-auto max-w-md">
             <button
               type="button"
               onClick={runSearch}
-              className="flex min-h-[56px] w-full items-center justify-center gap-2 rounded-full bg-brand-orange text-lg font-bold text-white shadow-lg transition hover:bg-orange-600 active:scale-[0.98]"
+              className="!mt-14 flex min-h-[56px] w-full items-center justify-center gap-2 rounded-full bg-brand-orange text-lg font-bold text-white shadow-lg transition hover:bg-orange-600 active:scale-[0.98]"
             >
               <Search className="h-6 w-6" />
               レシピを探す
             </button>
+
+            <div className="mt-10 border-t border-orange-100 pt-10">
+              <UsefulColumnsSection />
+            </div>
           </div>
-        </div>
-      )}
+        )}
+      </main>
     </>
   );
 }

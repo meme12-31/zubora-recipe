@@ -29,3 +29,75 @@ button,
 a {
   -webkit-tap-highlight-color: transparent;
 }
+
+/* お役立ちコラム記事本文 */
+.article-body {
+  overflow-wrap: anywhere;
+  font-size: 0.9375rem;
+  line-height: 1.75;
+  color: #374151;
+}
+
+.article-body h1 {
+  margin: 0 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #1f2937;
+}
+
+.article-body h2 {
+  margin: 1.75rem 0 0.75rem;
+  font-size: 1.0625rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #1f2937;
+}
+
+.article-body h3 {
+  margin: 1.25rem 0 0.5rem;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  line-height: 1.45;
+  color: #1f2937;
+}
+
+.article-body p {
+  margin: 0 0 1rem;
+}
+
+.article-body ul,
+.article-body ol {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.article-body li {
+  margin-bottom: 0.5rem;
+}
+
+.article-body hr {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #fed7aa;
+}
+
+.article-body strong {
+  font-weight: 700;
+  color: #1f2937;
+}
+
+.article-body a {
+  color: #ea580c;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.article-body .article-cta {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.75rem;
+  background-color: #f9fafb;
+}
