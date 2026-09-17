@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteName: 'hit-tool.com',
     images: [
       {
-        url: 'https://www.hit-tool.com/zubora-recipe/og-image.png',
+        url: 'https://www.hit-tool.com/zubora-recipe/og-image-v2.png',
         width: 1200,
         height: 630,
       },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     title: 'ズボラレシピ | 手間なし・簡単時短のレシピ検索ツール',
     description:
       '毎日のご飯作りをラクにする簡単ズボラレシピツール。包丁いらず、レンジで完結、洗い物最小限など、面倒くさがり屋さんのための時短料理アイデアをサクッと見つけて、おうちごはんをもっと気軽に！',
-    images: ['https://www.hit-tool.com/zubora-recipe/og-image.png'],
+    images: ['https://www.hit-tool.com/zubora-recipe/og-image-v2.png'],
   },
 };
 
