@@ -6,9 +6,32 @@ import './globals.css';
 const GA_MEASUREMENT_ID = 'G-KXFP18WL67';
 
 export const metadata: Metadata = {
-  title: '冷蔵庫レスキュー | あまり物で作るズボラ飯',
+  title: 'ズボラレシピ | 手間なし・簡単時短のレシピ検索ツール',
   description:
-    '冷蔵庫のあまり物と手間レベルを指定するだけで、AIが実在する簡単レシピを提案。包丁不要・レンジだけのズボラ飯も。',
+    '毎日のご飯作りをラクにする簡単ズボラレシピツール。包丁いらず、レンジで完結、洗い物最小限など、面倒くさがり屋さんのための時短料理アイデアをサクッと見つけて、おうちごはんをもっと気軽に！',
+  openGraph: {
+    title: 'ズボラレシピ | 手間なし・簡単時短のレシピ検索ツール',
+    description:
+      '毎日のご飯作りをラクにする簡単ズボラレシピツール。包丁いらず、レンジで完結、洗い物最小限など、面倒くさがり屋さんのための時短料理アイデアをサクッと見つけて、おうちごはんをもっと気軽に！',
+    url: 'https://www.hit-tool.com/zubora-recipe',
+    siteName: 'hit-tool.com',
+    images: [
+      {
+        url: 'https://www.hit-tool.com/zubora-recipe/og-image.png',
+        width: 1200,
+        height: 630,
+      },
+    ],
+    locale: 'ja_JP',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'ズボラレシピ | 手間なし・簡単時短のレシピ検索ツール',
+    description:
+      '毎日のご飯作りをラクにする簡単ズボラレシピツール。包丁いらず、レンジで完結、洗い物最小限など、面倒くさがり屋さんのための時短料理アイデアをサクッと見つけて、おうちごはんをもっと気軽に！',
+    images: ['https://www.hit-tool.com/zubora-recipe/og-image.png'],
+  },
 };
 
 export const viewport: Viewport = {
