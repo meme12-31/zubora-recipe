@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     title: 'ズボラレシピ | 手間なし・簡単時短のレシピ検索ツール',
     description:
       '毎日のご飯作りをラクにする簡単ズボラレシピツール。包丁いらず、レンジで完結、洗い物最小限など、面倒くさがり屋さんのための時短料理アイデアをサクッと見つけて、おうちごはんをもっと気軽に！',
-    url: 'https://www.hit-tool.com/zubora-recipe',
+    url: 'https://www.hit-tool.com/zubora-recipe?v=2',
     siteName: 'hit-tool.com',
     images: [
       {
