@@ -171,7 +171,10 @@ export default function HomePage() {
 
   return (
     <>
-      <Header showFavorites subtitle="あまり物でズボラ飯" />
+      <Header
+        showFavorites
+        subtitle="手間なし・簡単時短のレシピ検索ツール"
+      />
       <Toast toast={toast} onDismiss={() => setToast(null)} />
 
       <main className="flex-1 px-4 pb-16 pt-4">
