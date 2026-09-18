@@ -9,11 +9,11 @@ export const metadata: Metadata = {
     title: 'ズボラレシピ | 手間なし・簡単時短のレシピ検索ツール',
     description:
       '毎日のご飯作りをラクにする簡単ズボラレシピツール。包丁いらず、レンジで完結、洗い物最小限など、面倒くさがり屋さんのための時短料理アイデアをサクッと見つけて、おうちごはんをもっと気軽に！',
-    url: 'https://www.hit-tool.com/zubora-recipe?v=3',
+    url: 'https://www.hit-tool.com/zubora-recipe?v=10',
     siteName: 'hit-tool.com',
     images: [
       {
-        url: 'https://www.hit-tool.com/og-image-v2.png',
+        url: 'https://www.hit-tool.com/zubora-recipe/og-image.png?v=10',
         width: 1200,
         height: 630,
         alt: 'ズボラレシピ OGP画像',
