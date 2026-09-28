@@ -48,7 +48,7 @@ export default function HomePage() {
   useEffect(() => {
     const settings = loadSettings();
     setSpecialSeasonings(settings.specialSeasonings);
-    setEffortLevel(settings.lastEffortLevel);
+    setEffortLevel(1); // ページを開いた際の調理レベルは常に Lv.1（超ズボラ）をデフォルト選択
     setFavoriteIds(new Set(loadFavorites().map((r) => r.id)));
     setHydrated(true);
   }, []);
