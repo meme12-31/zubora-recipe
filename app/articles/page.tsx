@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 import UsefulColumnsSection from '@/components/UsefulColumnsSection';
 
 export const metadata: Metadata = {
-  title: 'お役立ちコラム | 冷蔵庫レスキュー',
+  title: 'お役立ちコラム',
   description:
     'あまり物活用やズボラ飯のコツを、読みやすい記事でまとめています。',
 };

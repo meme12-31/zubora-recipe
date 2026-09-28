@@ -8,11 +8,11 @@ const GA_MEASUREMENT_ID = 'G-KXFP18WL67';
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.hit-tool.com/zubora-recipe'),
   title: {
-    default: '冷蔵庫レスキュー',
-    template: '%s | 冷蔵庫レスキュー',
+    default: 'ズボラレシピ',
+    template: '%s | ズボラレシピ',
   },
   description:
-    '冷蔵庫のあまり物と手間レベルを指定するだけで、AIが実在する簡単レシピを提案します。',
+    '冷蔵庫のあまり物を入力して、調理レベルを選ぶだけ。AIが実在する簡単レシピを提案します。',
 };
 
 export const viewport: Viewport = {

@@ -37,7 +37,7 @@ export default function Header({
           <div className="leading-tight">
             <h1 className="text-lg font-bold text-brand-gray">ズボラレシピ</h1>
             {subtitle ? (
-              <p className="text-xs text-gray-500">{subtitle}</p>
+              <h2 className="text-xs font-normal text-gray-500">{subtitle}</h2>
             ) : null}
           </div>
         </div>

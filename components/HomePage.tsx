@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import { Search, RefreshCw, AlertTriangle, ArrowLeft } from 'lucide-react';
+import { Search, RefreshCw, AlertTriangle, ArrowLeft, Sparkles } from 'lucide-react';
 import Header from '@/components/Header';
 import IngredientInput from '@/components/IngredientInput';
 import EffortLevelSelector from '@/components/EffortLevelSelector';
@@ -235,9 +235,16 @@ export default function HomePage() {
 
         {view === 'input' && (
           <div className="space-y-5">
-            <p className="rounded-2xl bg-white/70 px-4 py-3 text-sm leading-relaxed text-gray-500">
-              冷蔵庫のあまり物を入力して、手間レベルを選ぶだけ。AIが実在する簡単レシピを提案します🍳
-            </p>
+            <div className="relative overflow-hidden rounded-2xl border border-orange-200/80 bg-gradient-to-r from-orange-50/90 via-white to-amber-50/60 p-4 shadow-sm">
+              <div className="flex items-center gap-3">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-orange-100 text-brand-orange shadow-xs">
+                  <Sparkles className="h-4 w-4" aria-hidden="true" />
+                </span>
+                <p className="text-sm font-medium leading-relaxed text-brand-gray">
+                  冷蔵庫のあまり物を入力して、<span className="font-bold text-brand-orange">調理レベル</span>を選ぶだけ。AIが実在する<span className="font-bold text-brand-orange">簡単レシピ</span>を提案します。
+                </p>
+              </div>
+            </div>
 
             <IngredientInput
               selected={ingredients}

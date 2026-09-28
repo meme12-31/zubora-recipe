@@ -14,10 +14,10 @@ export function generateStaticParams() {
 export function generateMetadata({ params }: ArticlePageProps): Metadata {
   const article = getArticleBySlug(params.slug);
   if (!article) {
-    return { title: '記事が見つかりません | 冷蔵庫レスキュー' };
+    return { title: '記事が見つかりません' };
   }
   return {
-    title: `${article.title} | 冷蔵庫レスキュー`,
+    title: article.title,
     description: article.excerpt,
   };
 }
