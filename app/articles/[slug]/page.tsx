@@ -19,6 +19,9 @@ export function generateMetadata({ params }: ArticlePageProps): Metadata {
   return {
     title: article.title,
     description: article.excerpt,
+    alternates: {
+      canonical: `/zubora-recipe/articles/${params.slug}`,
+    },
   };
 }
 

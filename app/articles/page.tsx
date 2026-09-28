@@ -6,6 +6,9 @@ export const metadata: Metadata = {
   title: 'お役立ちコラム',
   description:
     'あまり物活用やズボラ飯のコツを、読みやすい記事でまとめています。',
+  alternates: {
+    canonical: '/zubora-recipe/articles',
+  },
 };
 
 export default function ArticlesIndexPage() {

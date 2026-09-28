@@ -76,7 +76,7 @@ export const fridgeOrganizationTipsHtml = `<article>
 
   <section class="article-cta">
     <h3>「早め消費トレイ」に食材が集まったら？</h3>
-    <p>「トレイに中途半端な食材が集まったけれど、何を作ればいいかわからない…」という時は、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>を試してみてください！</p>
+    <p>「トレイに中途半端な食材が集まったけれど、何を作ればいいかわからない…」という時は、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>を試してみてください！</p>
     <p>あまり物の野菜やお肉のボタンをタップするだけで、今ある食材だけで作れる最適なズボラレシピをAIが瞬時に提案します。食品ロスを減らしながら美味しいご飯を作るお供として、ぜひ活用してくださいね！</p>
   </section>
 </article>`;

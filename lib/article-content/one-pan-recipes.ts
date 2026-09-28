@@ -71,7 +71,7 @@ export const onePanRecipesHtml = `<article>
 
   <section class="article-cta">
     <h3>フライパン1つで作れるワンパンレシピを探したい時は？</h3>
-    <p>「フライパン1つで後片付けを楽にしたいけれど、今ある肉や野菜で何が作れるかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
+    <p>「フライパン1つで後片付けを楽にしたいけれど、今ある肉や野菜で何が作れるかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
     <p>家にある食材を選択するだけで、フライパン1つでサクッと作れるアイデアレシピをAIが提案してくれます。疲れた日の晩ごはん作りにぜひ役立ててくださいね！</p>
   </section>
 </article>`;

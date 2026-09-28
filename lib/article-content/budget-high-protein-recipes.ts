@@ -71,7 +71,7 @@ export const budgetHighProteinRecipesHtml = `<article>
 
   <section class="article-cta">
     <h3>冷蔵庫に残ったもやしや豆腐の使い道に迷ったら？</h3>
-    <p>「もやし半袋と卵1個があるけれど、具体的にどう組み合わせたら一番美味しいかな？」と思ったら、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をお試しください！</p>
+    <p>「もやし半袋と卵1個があるけれど、具体的にどう組み合わせたら一番美味しいかな？」と思ったら、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をお試しください！</p>
     <p>家にある食材を選択するだけで、サクッと作れる簡単・節約レシピをAIが提案してくれます。給料前や忙しい日の献立サポートとして活用してくださいね！</p>
   </section>
 </article>`;

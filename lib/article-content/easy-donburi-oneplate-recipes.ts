@@ -80,7 +80,7 @@ export const easyDonburiOneplateRecipesHtml = `<article>
 
   <section class="article-cta">
     <h3>家にある食材で今すぐ作れるズボラ丼を探したい時は？</h3>
-    <p>「冷凍ご飯と、冷蔵庫に残った少しのお肉・野菜で何丼が作れるかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
+    <p>「冷凍ご飯と、冷蔵庫に残った少しのお肉・野菜で何丼が作れるかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
     <p>あまりものの食材を選ぶだけで、包丁なし・レンジ完結で作れる簡単丼レシピをAIが提案してくれます。忙しい日の献立サポートとしてぜひ活用してくださいね！</p>
   </section>
 </article>`;

@@ -76,7 +76,7 @@ export const microwaveBowlRecipesHtml = `<article>
 
   <section class="article-cta">
     <h3>電子レンジで作れる簡単レシピを探したい時は？</h3>
-    <p>「今ある食材で、電子レンジだけで作れるレシピはないかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
+    <p>「今ある食材で、電子レンジだけで作れるレシピはないかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
     <p>家にある野菜やお肉を選ぶだけで、火を使わずに電子レンジでサクッと作れるアイデアレシピをAIが提案してくれます。疲れた日の晩ごはん作りにぜひ役立ててください！</p>
   </section>
 </article>`;

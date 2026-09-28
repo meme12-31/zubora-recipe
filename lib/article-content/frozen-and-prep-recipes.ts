@@ -63,7 +63,7 @@ export const frozenAndPrepRecipesHtml = `<article>
 
   <section class="article-cta">
     <h3>冷凍庫にある食材やあまり物で今すぐ料理を作りたい時は？</h3>
-    <p>「冷凍うどん・冷凍豚肉と、冷蔵庫に残った少しの野菜で何が作れるかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
+    <p>「冷凍うどん・冷凍豚肉と、冷蔵庫に残った少しの野菜で何が作れるかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
     <p>冷凍食材や家にある材料を選択するだけで、パサつかず美味しく作れる超時短レシピをAIが提案してくれます。疲れた日の晩ごはん作りにぜひ活用してくださいね！</p>
   </section>
 </article>`;

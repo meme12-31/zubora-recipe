@@ -6,7 +6,10 @@ import './globals.css';
 const GA_MEASUREMENT_ID = 'G-KXFP18WL67';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.hit-tool.com/zubora-recipe'),
+  metadataBase: new URL('https://hit-tool.com'),
+  alternates: {
+    canonical: '/zubora-recipe',
+  },
   title: {
     default: 'ズボラレシピ',
     template: '%s | ズボラレシピ',

@@ -72,7 +72,7 @@ export const easySeasoningsRecipesHtml = `<article>
 
   <section class="article-cta">
     <h3>家にある食材と調味料で何が作れるか迷ったら？</h3>
-    <p>「めんつゆと、冷蔵庫に残ったキャベツと豚肉があるけれど、具体的にどう調理すれば一番ラクかな？」と思ったら、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
+    <p>「めんつゆと、冷蔵庫に残ったキャベツと豚肉があるけれど、具体的にどう調理すれば一番ラクかな？」と思ったら、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
     <p>あまり物の食材を選ぶだけで、今ある調味料を活用してサクッと作れる簡単レシピをAIが提示してくれます。献立作りの手間を省いて、サクッと美味しいズボラ飯を作りましょう！</p>
   </section>
 </article>`;

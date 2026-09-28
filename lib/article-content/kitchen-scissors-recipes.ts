@@ -81,7 +81,7 @@ export const kitchenScissorsRecipesHtml = `<article>
 
   <section class="article-cta">
     <h3>包丁を使わずに作れるアイデアレシピを探したい時は？</h3>
-    <p>「まな板を使いたくないけれど、今ある肉と野菜で何が作れるかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
+    <p>「まな板を使いたくないけれど、今ある肉と野菜で何が作れるかな？」とお悩みの時は、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をご利用ください！</p>
     <p>家にある食材を選択するだけで、キッチンハサミや手だけで手軽に作れる爆速レシピをAIが提案してくれます。疲れた日の晩ごはん作りにぜひ活用してくださいね！</p>
   </section>
 </article>`;

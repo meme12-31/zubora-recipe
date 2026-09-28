@@ -72,7 +72,7 @@ export const versatileVegetablesRecipesHtml = `<article>
 
   <section class="article-cta">
     <h3>中途半端に余った野菜の使い道に困ったら？</h3>
-    <p>「玉ねぎ半分とキャベツが少し残っているけれど、具体的にどんな味付け・工程で作ればいいか分からない…」という時は、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をお試しください！</p>
+    <p>「玉ねぎ半分とキャベツが少し残っているけれど、具体的にどんな味付け・工程で作ればいいか分からない…」という時は、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>をお試しください！</p>
     <p>家にある野菜や食材をタップするだけで、今の冷蔵庫の中身でサクッと作れる簡単レシピをAIが提示してくれます。献立に迷った時のサポーターとして、ぜひ活用してみてくださいね！</p>
   </section>
 </article>`;

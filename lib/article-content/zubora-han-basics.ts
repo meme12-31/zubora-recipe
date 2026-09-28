@@ -87,7 +87,7 @@ export const zuboraHanBasicsHtml = `<article>
 
   <section class="article-cta">
     <h3>冷蔵庫に中途半端な食材が残っていませんか？</h3>
-    <p>「それでも具体的に何の料理を作ればいいか思いつかない…」という時は、ぜひ当サイトの便利ツール<strong><a href="https://www.hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>を活用してみてください！</p>
+    <p>「それでも具体的に何の料理を作ればいいか思いつかない…」という時は、ぜひ当サイトの便利ツール<strong><a href="https://hit-tool.com/zubora-recipe">冷蔵庫レスキュー（あまり物でズボラ飯）</a></strong>を活用してみてください！</p>
     <p>使い方はとても簡単。<strong>家にある食材をタップして選ぶだけ</strong>で、今の冷蔵庫の中身で作れるおすすめの簡単ズボラレシピをAIがサクッと提案してくれます。献立に迷った時の救世主として、ぜひ日常の自炊にお役立てください！</p>
   </section>
 </article>`;
