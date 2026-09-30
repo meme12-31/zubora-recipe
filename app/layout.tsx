@@ -51,7 +51,7 @@ export default function RootLayout({
         {/* モバイルライクな中央寄せコンテナ */}
         <div className="mx-auto flex min-h-screen w-full max-w-md flex-col bg-brand-cream shadow-sm">
           <div className="flex flex-1 flex-col">{children}</div>
-          <Footer />
+          <Footer currentAppId="zubora-recipe" />
         </div>
       </body>
     </html>
