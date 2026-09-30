@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Header from '@/components/Header';
+import ArticleJsonLd from '@/components/ArticleJsonLd';
 import { getAllArticles, getArticleBySlug } from '@/lib/articles';
 
 interface ArticlePageProps {
@@ -31,6 +32,7 @@ export default function ArticlePage({ params }: ArticlePageProps) {
 
   return (
     <>
+      <ArticleJsonLd article={article} />
       <Header showBack subtitle="お役立ちコラム" />
       <main className="flex-1 px-4 pb-16 pt-4">
         <div

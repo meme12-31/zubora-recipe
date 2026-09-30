@@ -44,17 +44,34 @@ const jsonLd = {
   '@graph': [
     {
       '@type': 'WebApplication',
-      name: 'ズボラレシピ',
+      name: '冷蔵庫レスキュー｜あまり物でズボラ飯',
       url: 'https://hit-tool.com/zubora-recipe',
-      applicationCategory: 'LifestyleApplication',
+      applicationCategory: 'UtilityApplication',
       operatingSystem: 'All',
       description:
-        '冷蔵庫のあまり物を入力して、調理レベルを選ぶだけ。AIが実在する簡単レシピを提案します。',
+        '冷蔵庫に残った食材を選ぶだけで、簡単に作れるズボラ飯レシピを提案する便利Webツールです。',
       offers: {
         '@type': 'Offer',
         price: '0',
         priceCurrency: 'JPY',
       },
+    },
+    {
+      '@type': 'BreadcrumbList',
+      itemListElement: [
+        {
+          '@type': 'ListItem',
+          position: 1,
+          name: 'HITツールズ',
+          item: 'https://hit-tool.com/',
+        },
+        {
+          '@type': 'ListItem',
+          position: 2,
+          name: '冷蔵庫レスキュー',
+          item: 'https://hit-tool.com/zubora-recipe',
+        },
+      ],
     },
     {
       '@type': 'FAQPage',

@@ -14,7 +14,14 @@ export interface ArticleEntry {
   title: string;
   excerpt: string;
   html: string;
+  image?: string;
+  datePublished?: string;
+  dateModified?: string;
 }
+
+const DEFAULT_ARTICLE_IMAGE =
+  'https://hit-tool.com/zubora-recipe/og-image.png?v=10';
+const DEFAULT_DATE = '2026-10-01';
 
 const ARTICLES: ArticleEntry[] = [
   {
@@ -24,6 +31,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       '「たんぱく質＋野菜＋万能調味料」の黄金公式と、和風・マヨポン・中華風の失敗しない味付けルールを解説。あまり物を無駄にしない自炊の基本をまとめました。',
     html: zuboraHanBasicsHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'fridge-organization-tips',
@@ -32,6 +42,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       '食材を余らせる原因と、早め消費トレイ・定位置・7割収納など「見せる化」で賞味期限切れを防ぐ整理術。買った当日の3分下処理も紹介します。',
     html: fridgeOrganizationTipsHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'versatile-vegetables-recipes',
@@ -40,6 +53,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       '玉ねぎ・人参・キャベツを無駄にしない切り方と使い回し。スープ・レンチン・蒸し焼き、ミックス野菜の作り置きまで、ズボラでも使い切れるアイデアをまとめました。',
     html: versatileVegetablesRecipesHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'easy-seasonings-recipes',
@@ -48,6 +64,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       'めんつゆ・ポン酢・焼肉のタレで味付けを一発決着。和風炒め・ポン酢照り焼き・スタミナ炒めなど、計量不要のズボラレシピと使い方のコツをまとめました。',
     html: easySeasoningsRecipesHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'budget-high-protein-recipes',
@@ -56,6 +75,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       'もやし・豆腐・卵を10分以内で大満足のおかずに。レンチン・水切りなし・包丁不要の節約テクニックと高タンパクズボラレシピをまとめました。',
     html: budgetHighProteinRecipesHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'microwave-bowl-recipes',
@@ -64,6 +86,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       '耐熱ボウル1つと電子レンジで10分以内のおかず。蒸し炒め・ワンボウルパスタ・レンジ肉じゃがと、失敗しない加熱のコツをまとめました。',
     html: microwaveBowlRecipesHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'kitchen-scissors-recipes',
@@ -72,6 +97,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       '包丁・まな板なしで下準備から完成まで。キッチンハサミの直投入炒め・手ちぎり和え・鶏ももポン酢照り焼きなど、後片付け最小のノーカット調理術をまとめました。',
     html: kitchenScissorsRecipesHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'one-pan-recipes',
@@ -80,6 +108,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       '別茹で・別炒め不要のワンパン調理。クリームパスタ・蒸し焼き・ビビンバ風ご飯と、深型フライパンで失敗しない3つの鉄則をまとめました。',
     html: onePanRecipesHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'easy-donburi-oneplate-recipes',
@@ -88,6 +119,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       'レンジとハサミだけで5〜10分のズボラ丼。親子丼・ツナマヨキムチ・ねぎ豚・さば缶あんかけと、一皿で満足できるワンプレートのコツをまとめました。',
     html: easyDonburiOneplateRecipesHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
   {
     slug: 'frozen-and-prep-recipes',
@@ -96,6 +130,9 @@ const ARTICLES: ArticleEntry[] = [
     excerpt:
       '冷凍カット野菜・パラパラ肉・冷凍うどんの活用法と、ついで作り置き3ルール。下処理ゼロで5〜10分の夕食を実現するズボラ時短術をまとめました。',
     html: frozenAndPrepRecipesHtml,
+    image: DEFAULT_ARTICLE_IMAGE,
+    datePublished: DEFAULT_DATE,
+    dateModified: DEFAULT_DATE,
   },
 ];
 
