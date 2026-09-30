@@ -1,7 +1,11 @@
 import type { Metadata } from 'next';
-import HomePage from '@/components/HomePage';
+import RecipeSearchClient from '@/components/RecipeSearchClient';
+import HomeSeoContent from '@/components/HomeSeoContent';
+import { getAllArticles } from '@/lib/articles';
+import { FAQS } from '@/lib/faq';
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://hit-tool.com'),
   alternates: {
     canonical: '/zubora-recipe',
   },
@@ -36,6 +40,49 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'WebApplication',
+      name: 'ズボラレシピ',
+      url: 'https://hit-tool.com/zubora-recipe',
+      applicationCategory: 'LifestyleApplication',
+      operatingSystem: 'All',
+      description:
+        '冷蔵庫のあまり物を入力して、調理レベルを選ぶだけ。AIが実在する簡単レシピを提案します。',
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'JPY',
+      },
+    },
+    {
+      '@type': 'FAQPage',
+      mainEntity: FAQS.map((faq) => ({
+        '@type': 'Question',
+        name: faq.question,
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: faq.answer,
+        },
+      })),
+    },
+  ],
+};
+
 export default function ZuboraRecipePage() {
-  return <HomePage />;
+  const articles = getAllArticles();
+
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <RecipeSearchClient>
+        <HomeSeoContent articles={articles} />
+      </RecipeSearchClient>
+    </>
+  );
 }
