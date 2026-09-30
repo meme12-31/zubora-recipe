@@ -11,61 +11,69 @@ export default function ArticleJsonLd({ article }: ArticleJsonLdProps) {
   const datePublished = article.datePublished || '2026-10-01';
   const dateModified = article.dateModified || datePublished;
 
-  const jsonLd = {
+  const articleJsonLd = {
     '@context': 'https://schema.org',
-    '@graph': [
+    '@type': 'Article',
+    headline: article.title,
+    description: article.excerpt,
+    image: imageUrl,
+    datePublished,
+    dateModified,
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': url,
+    },
+    author: {
+      '@type': 'Organization',
+      name: 'HITツールズ',
+      url: 'https://hit-tool.com/',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'HITツールズ',
+      url: 'https://hit-tool.com/',
+    },
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
       {
-        '@type': 'Article',
-        headline: article.title,
-        description: article.excerpt,
-        image: imageUrl,
-        datePublished,
-        dateModified,
-        mainEntityOfPage: {
-          '@type': 'WebPage',
-          '@id': url,
-        },
-        author: {
-          '@type': 'Organization',
-          name: 'HITツールズ',
-          url: 'https://hit-tool.com/',
-        },
-        publisher: {
-          '@type': 'Organization',
-          name: 'HITツールズ',
-          url: 'https://hit-tool.com/',
-        },
+        '@type': 'ListItem',
+        position: 1,
+        name: 'HITツールズ',
+        item: 'https://hit-tool.com/',
       },
       {
-        '@type': 'BreadcrumbList',
-        itemListElement: [
-          {
-            '@type': 'ListItem',
-            position: 1,
-            name: 'HITツールズ',
-            item: 'https://hit-tool.com/',
-          },
-          {
-            '@type': 'ListItem',
-            position: 2,
-            name: '冷蔵庫レスキュー コラム一覧',
-            item: 'https://hit-tool.com/zubora-recipe/articles',
-          },
-          {
-            '@type': 'ListItem',
-            position: 3,
-            name: article.title,
-            item: url,
-          },
-        ],
+        '@type': 'ListItem',
+        position: 2,
+        name: '冷蔵庫レスキュー コラム一覧',
+        item: 'https://hit-tool.com/zubora-recipe/articles',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: article.title,
+        item: url,
       },
     ],
   };
 
   return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(articleJsonLd),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbJsonLd),
+        }}
+      />
+    </>
   );
 }

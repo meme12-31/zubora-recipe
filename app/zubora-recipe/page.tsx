@@ -39,60 +39,80 @@ export const metadata: Metadata = {
   },
 };
 
-const jsonLd = {
+// 1. WebApplication 構造化データ
+const webApplicationJsonLd = {
   '@context': 'https://schema.org',
-  '@graph': [
+  '@type': 'WebApplication',
+  name: '冷蔵庫レスキュー｜あまり物でズボラ飯',
+  url: 'https://hit-tool.com/zubora-recipe',
+  applicationCategory: 'UtilityApplication',
+  operatingSystem: 'All',
+  description:
+    '冷蔵庫に残った食材を選ぶだけで、簡単に作れるズボラ飯レシピを提案する便利Webツールです。',
+  offers: {
+    '@type': 'Offer',
+    price: '0',
+    priceCurrency: 'JPY',
+  },
+};
+
+// 2. BreadcrumbList 構造化データ（パンくずリスト）
+const breadcrumbListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
     {
-      '@type': 'WebApplication',
-      name: '冷蔵庫レスキュー｜あまり物でズボラ飯',
-      url: 'https://hit-tool.com/zubora-recipe',
-      applicationCategory: 'UtilityApplication',
-      operatingSystem: 'All',
-      description:
-        '冷蔵庫に残った食材を選ぶだけで、簡単に作れるズボラ飯レシピを提案する便利Webツールです。',
-      offers: {
-        '@type': 'Offer',
-        price: '0',
-        priceCurrency: 'JPY',
-      },
+      '@type': 'ListItem',
+      position: 1,
+      name: 'HITツールズ',
+      item: 'https://hit-tool.com/',
     },
     {
-      '@type': 'BreadcrumbList',
-      itemListElement: [
-        {
-          '@type': 'ListItem',
-          position: 1,
-          name: 'HITツールズ',
-          item: 'https://hit-tool.com/',
-        },
-        {
-          '@type': 'ListItem',
-          position: 2,
-          name: '冷蔵庫レスキュー',
-          item: 'https://hit-tool.com/zubora-recipe',
-        },
-      ],
-    },
-    {
-      '@type': 'FAQPage',
-      mainEntity: FAQS.map((faq) => ({
-        '@type': 'Question',
-        name: faq.question,
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: faq.answer,
-        },
-      })),
+      '@type': 'ListItem',
+      position: 2,
+      name: '冷蔵庫レスキュー',
+      item: 'https://hit-tool.com/zubora-recipe',
     },
   ],
+};
+
+// 3. FAQPage 構造化データ
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
 };
 
 export default function ZuboraRecipePage() {
   return (
     <>
+      {/* 構造化データ: WebApplication */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(webApplicationJsonLd),
+        }}
+      />
+      {/* 構造化データ: BreadcrumbList (パンくずリスト) */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbListJsonLd),
+        }}
+      />
+      {/* 構造化データ: FAQPage */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(faqJsonLd),
+        }}
       />
       <RecipeSearchClient>
         <HomeSeoContent />

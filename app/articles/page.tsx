@@ -11,9 +11,34 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbListJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      name: 'HITツールズ',
+      item: 'https://hit-tool.com/',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      name: '冷蔵庫レスキュー コラム一覧',
+      item: 'https://hit-tool.com/zubora-recipe/articles',
+    },
+  ],
+};
+
 export default function ArticlesIndexPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(breadcrumbListJsonLd),
+        }}
+      />
       <Header showBack subtitle="お役立ちコラム" />
       <main className="flex-1 px-4 pb-16 pt-4">
         <UsefulColumnsSection />
