@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import RecipeSearchClient from '@/components/RecipeSearchClient';
 import HomeSeoContent from '@/components/HomeSeoContent';
-import { getAllArticles } from '@/lib/articles';
 import { FAQS } from '@/lib/faq';
 
 export const metadata: Metadata = {
@@ -72,8 +71,6 @@ const jsonLd = {
 };
 
 export default function ZuboraRecipePage() {
-  const articles = getAllArticles();
-
   return (
     <>
       <script
@@ -81,7 +78,7 @@ export default function ZuboraRecipePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       <RecipeSearchClient>
-        <HomeSeoContent articles={articles} />
+        <HomeSeoContent />
       </RecipeSearchClient>
     </>
   );

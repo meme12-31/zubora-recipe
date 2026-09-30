@@ -1,14 +1,8 @@
-import Link from 'next/link';
-import { ChefHat, HelpCircle, BookOpen, ChevronRight, ChevronDown } from 'lucide-react';
+import { ChefHat, HelpCircle, ChevronDown } from 'lucide-react';
 import UsefulColumnsBanner from '@/components/UsefulColumnsBanner';
 import { FAQS } from '@/lib/faq';
-import type { ArticleEntry } from '@/lib/articles';
 
-interface HomeSeoContentProps {
-  articles: ArticleEntry[];
-}
-
-export default function HomeSeoContent({ articles }: HomeSeoContentProps) {
+export default function HomeSeoContent() {
   return (
     <div className="space-y-10 pt-2">
       {/* お役立ちコラム 記事一覧へバナー */}
@@ -101,55 +95,6 @@ export default function HomeSeoContent({ articles }: HomeSeoContentProps) {
             </details>
           ))}
         </div>
-      </section>
-
-      {/* お役立ちコラム・知恵袋（一覧） */}
-      <section aria-labelledby="featured-columns-heading" className="space-y-3">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-100 text-brand-orange">
-              <BookOpen className="h-4 w-4" aria-hidden />
-            </span>
-            <h2 id="featured-columns-heading" className="text-base font-bold text-brand-gray">
-              お役立ちコラム
-            </h2>
-          </div>
-          <Link
-            href="/articles"
-            className="text-xs font-bold text-brand-orange hover:underline"
-          >
-            すべて見る →
-          </Link>
-        </div>
-        <p className="text-xs leading-relaxed text-gray-500">
-          余り物活用やズボラ飯のコツをまとめたお役立ち記事です。
-        </p>
-
-        <ul className="space-y-2.5">
-          {articles.map((article) => (
-            <li key={article.slug}>
-              <Link
-                href={`/articles/${article.slug}`}
-                className="group block rounded-2xl bg-white p-3.5 shadow-sm transition hover:bg-orange-50/80 active:scale-[0.99]"
-              >
-                <div className="flex items-start justify-between gap-3">
-                  <div className="min-w-0 flex-1 space-y-1">
-                    <h3 className="text-xs font-bold leading-snug text-brand-gray group-hover:text-brand-orange">
-                      {article.title}
-                    </h3>
-                    <p className="line-clamp-2 text-[11px] leading-relaxed text-gray-500">
-                      {article.excerpt}
-                    </p>
-                  </div>
-                  <ChevronRight
-                    className="mt-0.5 h-4 w-4 shrink-0 text-gray-300 transition group-hover:text-brand-orange"
-                    aria-hidden
-                  />
-                </div>
-              </Link>
-            </li>
-          ))}
-        </ul>
       </section>
     </div>
   );
