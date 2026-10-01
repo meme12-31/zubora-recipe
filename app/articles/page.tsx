@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/zubora-recipe/articles',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 const breadcrumbListJsonLd = {

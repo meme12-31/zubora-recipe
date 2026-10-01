@@ -23,6 +23,14 @@ export function generateMetadata({ params }: ArticlePageProps): Metadata {
     alternates: {
       canonical: `/zubora-recipe/articles/${params.slug}`,
     },
+    robots: {
+      index: true,
+      follow: true,
+      googleBot: {
+        index: true,
+        follow: true,
+      },
+    },
   };
 }
 

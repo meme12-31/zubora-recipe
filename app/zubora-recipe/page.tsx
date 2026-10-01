@@ -8,6 +8,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/zubora-recipe',
   },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   title: {
     absolute: 'ズボラレシピ | 手間なし・簡単時短のレシピ検索ツール',
   },

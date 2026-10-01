@@ -16,6 +16,14 @@ export const metadata: Metadata = {
   },
   description:
     '冷蔵庫のあまり物を入力して、調理レベルを選ぶだけ。AIが実在する簡単レシピを提案します。',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export const viewport: Viewport = {
