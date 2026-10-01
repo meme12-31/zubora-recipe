@@ -13,7 +13,7 @@ interface ToolItem {
 const ALL_TOOLS: ToolItem[] = [
   {
     id: "recipe-calculator",
-    name: "レシピ人数変更・調味料ｇ変換 | ケーキ型サイズ変更",
+    name: "レシピ人数変更・調味料g変換 | ケーキ型サイズ変更",
     url: "https://hit-tool.com/recipe-calculator",
     description: "人数の変更やケーキ型のサイズ変更に伴う調味料・材料の分量を自動計算するツール",
     icon: <Utensils className="w-5 h-5 text-orange-500" />,
@@ -29,7 +29,7 @@ const ALL_TOOLS: ToolItem[] = [
   },
   {
     id: "calcnote",
-    name: "CalcNote - メモ＆手書きができる無料電卓アプリ",
+    name: "CalcNote | メモ＆手書きができる無料Web電卓アプリ",
     url: "https://hit-tool.com/calcnote",
     description: "テキストと一緒に計算式を残して自動計算・保存ができる計算メモツール",
     icon: <Calculator className="w-5 h-5 text-blue-500" />,
@@ -45,7 +45,7 @@ const ALL_TOOLS: ToolItem[] = [
   },
   {
     id: "travel-checklist",
-    name: "旅行の持ち物チェッカー",
+    name: "持ち物チェックリスト | 国内外の旅行・出張・お出かけの準備を効率化",
     url: "https://hit-tool.com/travel-checklist",
     description: "旅行や出張の準備・持ち物を一覧でスマートにチェック・管理できるツール",
     icon: <CheckSquare className="w-5 h-5 text-emerald-500" />,
