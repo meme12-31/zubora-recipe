@@ -176,7 +176,7 @@ export default function RecipeSearchClient({ children }: RecipeSearchClientProps
     <>
       <Header
         showFavorites
-        subtitle="手間なし・簡単時短のレシピ検索ツール"
+        subtitle="冷蔵庫のあまり物で簡単時短レシピ検索"
       />
       <Toast toast={toast} onDismiss={() => setToast(null)} />
 
