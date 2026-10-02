@@ -4,32 +4,16 @@ import HomeSeoContent from '@/components/HomeSeoContent';
 import { FAQS } from '@/lib/faq';
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://hit-tool.com'),
-  alternates: {
-    canonical: '/zubora-recipe',
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: {
-      index: true,
-      follow: true,
-    },
-  },
-  title: {
-    absolute: '冷蔵庫レスキュー｜あまり物でズボラ飯・簡単レシピ検索 - ズボラレシピ',
-  },
-  description:
-    '冷蔵庫にあるあまり物を入力して、調理レベルを選ぶだけで、AIが手軽に作れる簡単・時短レシピを提案します。献立に迷ったときや料理の手間を減らしたい忙しい日にも便利。無料・登録不要で、毎日の料理に役立ちます。',
+  title: 'ズボラレシピ | 冷蔵庫のあまり物で簡単時短レシピ検索',
+  description: '冷蔵庫にあるあまり物を入力して、調理レベルを選ぶだけで、AIが手軽に作れる簡単・時短レシピを提案します。献立に迷ったときや料理の手間を減らしたい忙しい日にも便利。無料・登録不要で、毎日の料理に役立ちます。',
   openGraph: {
-    title: '冷蔵庫レスキュー｜あまり物でズボラ飯・簡単レシピ検索 - ズボラレシピ',
-    description:
-      '冷蔵庫にあるあまり物を入力して、調理レベルを選ぶだけで、AIが手軽に作れる簡単・時短レシピを提案します。献立に迷ったときや料理の手間を減らしたい忙しい日にも便利。無料・登録不要で、毎日の料理に役立ちます。',
-    url: 'https://hit-tool.com/zubora-recipe?v=10',
+    title: 'ズボラレシピ | 冷蔵庫の余り物からAIが簡単レシピを提案',
+    description: '毎日のご飯作りをラクにするズボラレシピツール。冷蔵庫のあまり物を入れるだけで、AIが実在する簡単時短レシピを提案します！',
+    url: 'https://www.hit-tool.com/zubora-recipe?v=10',
     siteName: 'hit-tool.com',
     images: [
       {
-        url: 'https://hit-tool.com/zubora-recipe/og-image.png?v=10',
+        url: 'https://www.hit-tool.com/zubora-recipe/og-image.png?v=10',
         width: 1200,
         height: 630,
         alt: 'ズボラレシピ OGP画像',
@@ -37,13 +21,6 @@ export const metadata: Metadata = {
     ],
     locale: 'ja_JP',
     type: 'website',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: '冷蔵庫レスキュー｜あまり物でズボラ飯・簡単レシピ検索 - ズボラレシピ',
-    description:
-      '冷蔵庫にあるあまり物を入力して、調理レベルを選ぶだけで、AIが手軽に作れる簡単・時短レシピを提案します。献立に迷ったときや料理の手間を減らしたい忙しい日にも便利。無料・登録不要で、毎日の料理に役立ちます。',
-    images: ['https://hit-tool.com/zubora-recipe/og-image.png?v=10'],
   },
 };
 
