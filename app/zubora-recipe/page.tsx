@@ -9,11 +9,11 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'ズボラレシピ | 冷蔵庫の余り物からAIが簡単レシピを提案',
     description: '毎日のご飯作りをラクにするズボラレシピツール。冷蔵庫のあまり物を入れるだけで、AIが実在する簡単時短レシピを提案します！',
-    url: 'https://www.hit-tool.com/zubora-recipe?v=10',
+    url: 'https://hit-tool.com/zubora-recipe?v=10',
     siteName: 'hit-tool.com',
     images: [
       {
-        url: 'https://www.hit-tool.com/zubora-recipe/og-image.png?v=10',
+        url: 'https://hit-tool.com/zubora-recipe/og-image.png?v=10',
         width: 1200,
         height: 630,
         alt: 'ズボラレシピ OGP画像',
